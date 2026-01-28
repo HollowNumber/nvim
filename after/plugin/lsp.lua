@@ -77,12 +77,12 @@ vim.lsp.config.ts_ls = {
 	capabilities = capabilities,
 }
 
-vim.lsp.config.tinymist({
+vim.lsp.config.tinymist = {
 	cmd = { "tinymist" },
 	filetypes = { "typst" },
 	root_markers = { ".git" },
 	capabilities = capabilities,
-})
+}
 
 -- Enable LSPs for these filetypes
 vim.lsp.enable({ "pyright", "lua_ls", "rust_analyzer", "ts_ls", "svelte", "html", "cssls", "clangd", "tinymist" })
