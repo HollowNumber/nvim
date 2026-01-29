@@ -55,7 +55,7 @@ return require("packer").startup(function(use)
 	--	},
 	--})
 
-        use 'github/copilot.vim'
+	use("github/copilot.vim")
 
 	use("hrsh7th/nvim-cmp") -- Completion engine
 	use("hrsh7th/cmp-nvim-lsp") -- LSP completion source
@@ -86,5 +86,7 @@ return require("packer").startup(function(use)
 		requires = { "nvim-tree/nvim-web-devicons", opt = true },
 	})
 
-        use 'mason-org/mason.nvim'
+	use("mason-org/mason.nvim")
+
+	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
 end)
