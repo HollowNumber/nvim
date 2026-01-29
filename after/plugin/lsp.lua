@@ -84,8 +84,18 @@ vim.lsp.config.tinymist = {
 	capabilities = capabilities,
 }
 
+
+vim.lsp.config.phpactor = {
+  cmd = { 'phpactor', 'language-server' },
+  filetypes = { 'php' },
+  root_markers = { 'composer.json', '.git' },
+  cmd_env = {
+    PHPACTOR_DISABLE_XDEBUG = '1',
+  },
+}
+
 -- Enable LSPs for these filetypes
-vim.lsp.enable({ "pyright", "lua_ls", "rust_analyzer", "ts_ls", "svelte", "html", "cssls", "clangd", "tinymist" })
+vim.lsp.enable({ "pyright", "lua_ls", "rust_analyzer", "ts_ls", "svelte", "html", "cssls", "clangd", "tinymist", "phpactor" })
 
 -- Keybindings
 vim.api.nvim_create_autocmd("LspAttach", {

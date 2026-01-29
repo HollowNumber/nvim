@@ -13,6 +13,7 @@ require("nvim-treesitter").install({
 	"typst",
 	"java",
 	"typescript",
+        "php"
 })
 
 vim.api.nvim_create_autocmd("FileType", {

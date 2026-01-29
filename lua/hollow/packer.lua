@@ -55,6 +55,8 @@ return require("packer").startup(function(use)
 	--	},
 	--})
 
+        use 'github/copilot.vim'
+
 	use("hrsh7th/nvim-cmp") -- Completion engine
 	use("hrsh7th/cmp-nvim-lsp") -- LSP completion source
 	use("hrsh7th/cmp-buffer") -- Buffer completion source
