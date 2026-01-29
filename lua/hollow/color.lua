@@ -4,7 +4,7 @@ require("catppuccin").setup({
 	integrations = {
 		telescope = true,
 		cmp = true,
-		neotree = true,
+		--neotree = true,
 		-- other integrations you want
 	},
 })
