@@ -129,7 +129,7 @@ return require("packer").startup(function(use)
 					},
 					--- What autocomplete do you use.  We currently only
 					--- support cmp right now
-					source = "cmp",
+					source = nil,
 				},
 				--- WARNING: if you change cwd then this is likely broken
 				--- ill likely fix this in a later change
