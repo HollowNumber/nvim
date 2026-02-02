@@ -171,4 +171,6 @@ return require("packer").startup(function(use)
 			end)
 		end,
 	})
+
+	use("tpope/vim-cucumber")
 end)
