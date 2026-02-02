@@ -8,3 +8,4 @@ npairs.setup({
 local Rule = require("nvim-autopairs.rule")
 npairs.add_rule(Rule("<", ">"))
 npairs.add_rule(Rule("|", "|"))
+npairs.add_rule(Rule("$", "$", "typst"))

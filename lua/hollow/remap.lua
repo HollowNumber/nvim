@@ -17,6 +17,8 @@ vim.keymap.set("v", "<Down>", '<cmd>echo "Use j"<CR>')
 vim.keymap.set("v", "<Left>", '<cmd>echo "Use h"<CR>')
 vim.keymap.set("v", "<Right>", '<cmd>echo "Use l"<CR>')
 
+vim.keymap.set("i", "<C-å>", "<Esc>")
+
 -- Copy to clipboard
 vim.keymap.set({ "n", "v" }, "<leader>y", '"+y', { desc = "Copy to clipboard" })
 vim.keymap.set("n", "<leader>Y", '"+Y', { desc = "Copy line to clipboard" })
