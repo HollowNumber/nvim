@@ -1,10 +1,10 @@
 require("catppuccin").setup({
 	flavour = "frappe",
-	transparent_background = true,
+	transparent_background = false,
 	integrations = {
 		telescope = true,
 		cmp = true,
-                mason = true
+		mason = true,
 		--neotree = true,
 		-- other integrations you want
 	},

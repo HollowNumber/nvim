@@ -6,7 +6,7 @@ vim.keymap.set("n", "<leader>xw", "<cmd>Trouble diagnostics toggle<cr>")
 vim.keymap.set("n", "<leader>xb", "<cmd>Trouble diagnostics toggle filter.buf=0<cr>")
 vim.keymap.set("n", "<leader>xr", "<cmd>Trouble lsp_references toggle<cr>")
 vim.keymap.set("n", "<leader>xq", "<cmd>Trouble quickfix toggle<cr>")
-
+vim.opt.mouse = ""
 vim.keymap.set("n", "<Up>", '<cmd>echo "Use k"<CR>')
 vim.keymap.set("n", "<Down>", '<cmd>echo "Use j"<CR>')
 vim.keymap.set("n", "<Left>", '<cmd>echo "Use h"<CR>')

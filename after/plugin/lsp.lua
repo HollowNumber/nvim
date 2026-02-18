@@ -1,4 +1,7 @@
 local capabilities = require("cmp_nvim_lsp").default_capabilities()
+require("mason-lspconfig").setup()
+
+require("mason").setup()
 
 -- HTML
 vim.lsp.config.html = {
@@ -84,16 +87,25 @@ vim.lsp.config.tinymist = {
 	capabilities = capabilities,
 }
 
-
-
 vim.lsp.config.intelephense = {
-  cmd = { 'intelephense', '--stdio' },
-  filetypes = { 'php' },
-  root_markers = { 'composer.json', '.git' },
+	cmd = { "intelephense", "--stdio" },
+	filetypes = { "php" },
+	root_markers = { "composer.json", ".git" },
 }
 
 -- Enable LSPs for these filetypes
-vim.lsp.enable({ "pyright", "lua_ls", "rust_analyzer", "ts_ls", "svelte", "html", "cssls", "clangd", "tinymist", "intelephense" })
+vim.lsp.enable({
+	"pyright",
+	"lua_ls",
+	"rust_analyzer",
+	"ts_ls",
+	"svelte",
+	"html",
+	"cssls",
+	"clangd",
+	"tinymist",
+	"intelephense",
+})
 
 -- Keybindings
 vim.api.nvim_create_autocmd("LspAttach", {
