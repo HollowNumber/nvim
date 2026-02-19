@@ -14,3 +14,4 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.shiftwidth = 4 -- Number of spaces for indentation
 vim.opt.expandtab = true
+vim.opt.guicursor = ""
