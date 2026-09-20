@@ -104,6 +104,7 @@ vim.lsp.enable({
 	"clangd",
 	"tinymist",
 	"intelephense",
+	"qmlls",
 })
 
 -- Keybindings
