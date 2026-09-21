@@ -1,6 +1,6 @@
 require('lualine').setup({
     options = {
-        theme = 'catppuccin',
+        theme = 'auto',
         globalstatus = true, -- Single statusline for all windows
         component_separators = '',
         section_separators = '',
