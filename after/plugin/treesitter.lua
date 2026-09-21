@@ -1,23 +1,3 @@
-require("nvim-treesitter").setup({
-	install_dir = vim.fn.stdpath("data") .. "/site",
-})
-
-require("nvim-treesitter").install({
-	"rust",
-	"javascript",
-	"c",
-	"markdown",
-	"svelte",
-	"html",
-	"css",
-	"typst",
-	"java",
-	"typescript",
-        "php"
-})
-
-vim.api.nvim_create_autocmd("FileType", {
-	callback = function()
-		pcall(vim.treesitter.start)
-	end,
-})
+version https://git-lfs.github.com/spec/v1
+oid sha256:0d1253a18d7e033604c35718f702e4b87ef0eee79e85cced3138acf11fa88f42
+size 353

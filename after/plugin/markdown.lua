@@ -1,6 +1,3 @@
-require("markview").setup({
-    preview = { enable = false }
-});
-
-vim.api.nvim_set_keymap("n", "<leader>m", "<CMD>Markview<CR>", { desc = "Toggles `markview` previews globally." });
-vim.api.nvim_set_keymap("i", "<Ctrl-m>", "<CMD>Markview HybridToggle<CR>", { desc = "Toggles `hybrid mode` globally." });
+version https://git-lfs.github.com/spec/v1
+oid sha256:762b3b26a3f2ae5bf97fcbf8920a5151a186ea6335918f7812f5a06534f9c1fe
+size 304

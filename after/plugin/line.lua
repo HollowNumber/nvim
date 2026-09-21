@@ -1,17 +1,3 @@
-require('lualine').setup({
-    options = {
-        theme = 'auto',
-        globalstatus = true, -- Single statusline for all windows
-        component_separators = '',
-        section_separators = '',
-    },
-    sections = {
-        lualine_a = { 'mode', 'branch' },
-        lualine_b = { 'diff', 'location' },
-        lualine_c = { 'filename', 'diagnostics' },
-        -- Right side - leave empty
-        lualine_x = {},
-        lualine_y = {},
-        lualine_z = {},
-    },
-})
+version https://git-lfs.github.com/spec/v1
+oid sha256:bde9455d3c5bc024a9adbafb22394fd09b68bf86f85c2a2422cfd12ae5ddf2be
+size 486

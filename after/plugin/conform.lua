@@ -1,19 +1,3 @@
-require('conform').setup({
-	formatters_by_ft = {
-		lua = { 'stylua' },
-		python = { 'black', 'isort' },
-		javascript = { 'prettier' },
-		typescript = { 'prettier' },
-		rust = { 'rustfmt' },
-		go = { 'gofmt' },
-	},
-	format_on_save = {
-		timeout_ms = 500,
-		lsp_fallback = true,
-	},
-})
-
--- Manual format keybinding
-vim.keymap.set('n', '<leader>f', function()
-	require('conform').format({ async = true, lsp_fallback = true })
-end, { desc = 'Format file' })
+version https://git-lfs.github.com/spec/v1
+oid sha256:dd635682186bd0cf5845b0c8cbe46036fa41889f998e8ac625e53957b06ca6ac
+size 454

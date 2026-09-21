@@ -1,11 +1,3 @@
-local npairs = require("nvim-autopairs")
-
-npairs.setup({
-	check_ts = true,
-	enable_check_bracket_line = false, -- Don't add pairs if closing bracket already exists on the line
-})
-
-local Rule = require("nvim-autopairs.rule")
-npairs.add_rule(Rule("<", ">"))
-npairs.add_rule(Rule("|", "|"))
-npairs.add_rule(Rule("$", "$", "typst"))
+version https://git-lfs.github.com/spec/v1
+oid sha256:48bcd78a699ba4ab476c80f913da694649cf4f9055870ded7f237fa1d46836ab
+size 329
